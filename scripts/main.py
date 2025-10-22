@@ -1,13 +1,16 @@
-import PySide6.QtCore as QtCore
-from PySide6.QtGui import QKeySequence
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QIcon, QKeySequence, QShortcut
 from PySide6.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QHBoxLayout, QVBoxLayout,
-    QFrame, QPushButton, QStackedWidget
+    QApplication,
+    QMainWindow,
+    QWidget,
+    QHBoxLayout,
+    QVBoxLayout,
+    QFrame,
+    QPushButton,
+    QStackedWidget
 )
-from PySide6.QtWidgets import QShortcut
-from PySide6.QtGui import QIcon
-import sys
-import os
+import sys, os
 
 
 # Import utility functions
