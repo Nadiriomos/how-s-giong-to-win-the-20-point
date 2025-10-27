@@ -1,0 +1,51 @@
+body{background-color:black}h1{color:white}p{color:white}
+
+.sidebar {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            text-align: center;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 1px;
+            position: relative;
+        }
+
+        /* Tooltip styling */
+        .sidebar a::before {
+            content: attr(title);
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 0px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sidebar a:hover::before {
+            visibility: visible;
+            opacity: 1;
+        }
