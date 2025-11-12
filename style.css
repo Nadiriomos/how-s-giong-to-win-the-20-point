@@ -11,10 +11,7 @@ body{background-color:black}h1{color:white}p{color:white}
 
         }
 
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
+
 
         .sidebar li {
             padding: 12px;
